@@ -3,12 +3,13 @@
     <head>
         <title> NPM Clone</title>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <header>
             <div>
                 <div>
-                    <img src="images/black-heart.png" alt="black-heart"/>
+                    <img class="blackHeart" src="images/black-heart.png" alt="black-heart"/>
                     <span>Nifty Penguin Magic</span>
                 </div>
                 <nav>
@@ -22,17 +23,20 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <img src="images/npm-logo.png" alt="npm-logo"/>
+            <div class="header2">
+                <img class="npm-logo" src="images/npm-logo.png" alt="npm-logo"/>
+                    <div class="search-bar">
+                        <form action="/some url" method="post">
+                            <img src="images/magnifying-glass.png" alt="magnifying-glass"/>
+                            <input type="text" name="search-bar" id="search-bar" placeholder="Search packages">
+                            <button class="button-search-bar " type="sumit">Search</button>
+                        </form>
+                    </div>
                 <div>
-                    <form action="/some url" method="post">
-                        <img src="images/magnifying-glass.png" alt="magnifying-glass"/>
-                        <input type="text" name="search-bar" id="search-bar" placeholder="Search packages">
-                        <input type="button" value="Search">
-                    </form>
                     <a href="#">Join</a>
                     <a href="#">Log in</a>
                 </div>
+                    
             </div>
         </header>
         <section id="section1">
@@ -40,9 +44,9 @@
             <article>
                 <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
             </article>
-            <div>
-                <a href="#">See plans</a>
-                <a href="#">Join for free</a>
+            <div class="buttons">
+                <a class="button-view-plans" href="#">See plans</a>
+                <a class="button-join-free" href="#">Join for free</a>
             </div>
         </section>
         <section id="section2">
